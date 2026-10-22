@@ -28,3 +28,7 @@ def detalhe_projeto_cliente(request, pk):
             return redirect('detalhe_projeto_cliente', pk=pk)
 
     return render(request, 'core/detalhe_projeto.html', {'projeto': projeto})
+
+
+def inicio(request):
+    return render(request, 'core/inicio.html')
